@@ -1,0 +1,4 @@
+#define WIFI_SSID "ssid"
+#define WIFI_PASSWORD "password"
+
+#define URL "https://example.org/word-of-the-day/word-of-the-day.json"
