@@ -1,9 +1,9 @@
 #include "Fonts/Cantarell_Regular_euro8pt8b.h"
-#include "Fonts/FreeMonoBold_euro12pt8b.h"
+#include "Fonts/Cantarell_Regular_euro12pt8b.h"
 #include "Fonts/FreeMonoBold_euro14pt8b.h"
 
 #define FONT_SMALL Cantarell_Regular_euro8pt8b
-#define FONT_NORMAL FreeMonoBold_euro12pt8b
+#define FONT_NORMAL Cantarell_Regular_euro12pt8b
 #define FONT_BIG FreeMonoBold_euro14pt8b
 
 // Screen resolution is 264 × 176
@@ -77,15 +77,15 @@ void displayCenteredText(char* text) {
 void displayData(Words* words) {
   display.fillScreen(GxEPD_WHITE);
   display.firstPage();
-  int xLang = 2;
+  int xLang = 34;
   int xWord = 40;
   int yGap = 32;
   do {
     for (int i = 0; i < NB; i++) {
       int y = (1 + i) * yGap;
-      drawBoldText(xLang, y, words->languages[i], GxEPD_RED);
+      drawTextRightAlign(xLang, y, words->languages[i], GxEPD_BLACK);
       drawText(xWord, y, words->translations[i], GxEPD_BLACK);
-      display.drawLine(0, y + 5, display.width(), y + 5, GxEPD_BLACK);
+      display.drawLine(0, y + 5, display.width(), y + 5, GxEPD_RED);
     }
 
   } while (display.nextPage());

@@ -8,4 +8,5 @@ Words are requested from [word-of-the-day-server](https://github.com/paulgreg/wo
 
 ## Fonts
 
-Fonts are from [Adafruit-GFX-Library-fontconvert](https://github.com/paulgreg/Adafruit-GFX-Library-fontconvert) project.
+ - https://forum.arduino.cc/t/tuto-ajout-de-caracteres-accentues-a-nimporte-quelle-police/1182899
+ - https://tchapi.github.io/Adafruit-GFX-Font-Customiser/
